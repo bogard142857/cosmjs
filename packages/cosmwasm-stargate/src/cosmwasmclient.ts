@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { fromAscii, toHex } from "@cosmjs/encoding";
-import { Uint53 } from "@cosmjs/math";
+import { fromAscii, toHex } from "@bogard/encoding";
+import { Uint53 } from "@bogard/math";
 import {
   Account,
   accountFromAny,
@@ -22,9 +22,9 @@ import {
   setupTxExtension,
   TimeoutError,
   TxExtension,
-} from "@cosmjs/stargate";
-import { HttpEndpoint, Tendermint34Client, toRfc3339WithNanoseconds } from "@cosmjs/tendermint-rpc";
-import { assert, sleep } from "@cosmjs/utils";
+} from "@bogard/stargate";
+import { HttpEndpoint, Tendermint34Client, toRfc3339WithNanoseconds } from "@bogard/tendermint-rpc";
+import { assert, sleep } from "@bogard/utils";
 import {
   CodeInfoResponse,
   QueryCodesResponse,
@@ -253,7 +253,7 @@ export class CosmWasmClient {
    * If the transaction is included in a block, a `DeliverTxResponse` is returned. The caller then
    * usually needs to check for execution success or failure.
    */
-  // NOTE: This method is tested against slow chains and timeouts in the @cosmjs/stargate package.
+  // NOTE: This method is tested against slow chains and timeouts in the @bogard/stargate package.
   // Make sure it is kept in sync!
   public async broadcastTx(
     tx: Uint8Array,

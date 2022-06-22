@@ -1,6 +1,6 @@
-# @cosmjs/faucet-client
+# @bogard/faucet-client
 
-[![npm version](https://img.shields.io/npm/v/@cosmjs/faucet-client.svg)](https://www.npmjs.com/package/@cosmjs/faucet-client)
+[![npm version](https://img.shields.io/npm/v/@bogard/faucet-client.svg)](https://www.npmjs.com/package/@bogard/faucet-client)
 
 ## Running the tests
 

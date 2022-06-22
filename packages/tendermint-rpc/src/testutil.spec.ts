@@ -1,5 +1,5 @@
-import { toAscii } from "@cosmjs/encoding";
-import { sleep } from "@cosmjs/utils";
+import { toAscii } from "@bogard/encoding";
+import { sleep } from "@bogard/utils";
 
 export const anyMatcher = /^.*$/; // Any string, including empty. Does not do more than a type check.
 

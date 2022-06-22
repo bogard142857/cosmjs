@@ -1,4 +1,4 @@
-import { StargateClient } from "@cosmjs/stargate";
+import { StargateClient } from "@bogard/stargate";
 
 // Network config
 const rpcEndpoint = {

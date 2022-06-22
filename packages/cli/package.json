@@ -1,5 +1,5 @@
 {
-  "name": "@cosmjs/cli",
+  "name": "@bogard/cli",
   "version": "0.28.7",
   "description": "Command line interface",
   "contributors": [
@@ -40,16 +40,16 @@
     "!**/testdata/"
   ],
   "dependencies": {
-    "@cosmjs/amino": "workspace:packages/amino",
-    "@cosmjs/cosmwasm-stargate": "workspace:packages/cosmwasm-stargate",
-    "@cosmjs/crypto": "workspace:packages/crypto",
-    "@cosmjs/encoding": "workspace:packages/encoding",
-    "@cosmjs/faucet-client": "workspace:packages/faucet-client",
-    "@cosmjs/math": "workspace:packages/math",
-    "@cosmjs/proto-signing": "workspace:packages/proto-signing",
-    "@cosmjs/stargate": "workspace:packages/stargate",
-    "@cosmjs/tendermint-rpc": "workspace:packages/tendermint-rpc",
-    "@cosmjs/utils": "workspace:packages/utils",
+    "@bogard/amino": "workspace:packages/amino",
+    "@bogard/cosmwasm-stargate": "workspace:packages/cosmwasm-stargate",
+    "@bogard/crypto": "workspace:packages/crypto",
+    "@bogard/encoding": "workspace:packages/encoding",
+    "@bogard/faucet-client": "workspace:packages/faucet-client",
+    "@bogard/math": "workspace:packages/math",
+    "@bogard/proto-signing": "workspace:packages/proto-signing",
+    "@bogard/stargate": "workspace:packages/stargate",
+    "@bogard/tendermint-rpc": "workspace:packages/tendermint-rpc",
+    "@bogard/utils": "workspace:packages/utils",
     "axios": "^0.21.2",
     "babylon": "^6.18.0",
     "chalk": "^4",

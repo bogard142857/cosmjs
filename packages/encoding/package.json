@@ -1,5 +1,5 @@
 {
-  "name": "@cosmjs/encoding",
+  "name": "@bogard/encoding",
   "version": "0.28.7",
   "description": "Encoding helpers for blockchain projects",
   "contributors": [

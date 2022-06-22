@@ -1,7 +1,7 @@
-import { OfflineAminoSigner, StdSignature } from "@cosmjs/amino";
+import { OfflineAminoSigner, StdSignature } from "@bogard/amino";
 import { SignDoc } from "cosmjs-types/cosmos/tx/v1beta1/tx";
 
-export type Algo = "secp256k1" | "ed25519" | "sr25519";
+export type Algo = "ethsecp256k1" | "secp256k1" | "ed25519" | "sr25519";
 export interface AccountData {
   /** A printable address (typically bech32 encoded) */
   readonly address: string;
@@ -20,7 +20,11 @@ export interface DirectSignResponse {
 
 export interface OfflineDirectSigner {
   readonly getAccounts: () => Promise<readonly AccountData[]>;
-  readonly signDirect: (signerAddress: string, signDoc: SignDoc) => Promise<DirectSignResponse>;
+  readonly signDirect: (
+    signerAddress: string,
+    signDoc: SignDoc,
+    coinType?: string,
+  ) => Promise<DirectSignResponse>;
 }
 
 export type OfflineSigner = OfflineAminoSigner | OfflineDirectSigner;

@@ -3,8 +3,8 @@ import {
   calculateFee,
   SigningStargateClient,
   StargateClient,
-} from "@cosmjs/stargate";
-import { sleep } from "@cosmjs/utils";
+} from "@bogard/stargate";
+import { sleep } from "@bogard/utils";
 
 import * as constants from "./constants";
 import { debugAccount, logAccountsState, logSendJob } from "./debugging";

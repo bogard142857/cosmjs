@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { AminoMsg } from "@cosmjs/amino";
-import { EncodeObject } from "@cosmjs/proto-signing";
+import { AminoMsg } from "@bogard/amino";
+import { EncodeObject } from "@bogard/proto-signing";
 
 export interface AminoConverter {
   readonly aminoType: string;

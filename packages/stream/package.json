@@ -1,5 +1,5 @@
 {
-  "name": "@cosmjs/stream",
+  "name": "@bogard/stream",
   "version": "0.28.7",
   "description": "Utility functions for producing and consuming streams",
   "contributors": [

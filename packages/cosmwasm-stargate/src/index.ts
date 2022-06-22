@@ -31,4 +31,4 @@ export {
 } from "./signingcosmwasmclient";
 
 // Re-exported because this is part of the CosmWasmClient/SigningCosmWasmClient APIs
-export { HttpEndpoint } from "@cosmjs/tendermint-rpc";
+export { HttpEndpoint } from "@bogard/tendermint-rpc";

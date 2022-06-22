@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/naming-convention,no-bitwise */
-import { Secp256k1HdWallet } from "@cosmjs/amino";
-import { coin, coins, decodeTxRaw, DirectSecp256k1HdWallet, Registry } from "@cosmjs/proto-signing";
-import { assert, sleep } from "@cosmjs/utils";
+import { Secp256k1HdWallet } from "@bogard/amino";
+import { coin, coins, decodeTxRaw, DirectSecp256k1HdWallet, Registry } from "@bogard/proto-signing";
+import { assert, sleep } from "@bogard/utils";
 import { MsgSend } from "cosmjs-types/cosmos/bank/v1beta1/tx";
 import { Coin } from "cosmjs-types/cosmos/base/v1beta1/coin";
 import { DeepPartial, MsgDelegate } from "cosmjs-types/cosmos/staking/v1beta1/tx";

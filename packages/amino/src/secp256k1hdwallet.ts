@@ -10,9 +10,9 @@ import {
   Slip10,
   Slip10Curve,
   stringToPath,
-} from "@cosmjs/crypto";
-import { fromBase64, fromUtf8, toBase64, toBech32, toUtf8 } from "@cosmjs/encoding";
-import { assert, isNonNullObject } from "@cosmjs/utils";
+} from "@bogard/crypto";
+import { fromBase64, fromUtf8, toBase64, toBech32, toUtf8 } from "@bogard/encoding";
+import { assert, isNonNullObject } from "@bogard/utils";
 
 import { rawSecp256k1PubkeyToRawAddress } from "./addresses";
 import { makeCosmoshubPath } from "./paths";

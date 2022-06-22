@@ -6,8 +6,8 @@ import {
   OfflineAminoSigner,
   serializeSignDoc,
   StdSignDoc,
-} from "@cosmjs/amino";
-import { HdPath } from "@cosmjs/crypto";
+} from "@bogard/amino";
+import { HdPath } from "@bogard/crypto";
 import Transport from "@ledgerhq/hw-transport";
 
 import { AddressAndPubkey, LedgerConnector, LedgerConnectorOptions } from "./ledgerconnector";

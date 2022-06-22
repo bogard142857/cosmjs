@@ -1,8 +1,8 @@
-import { coin, coins, makeCosmoshubPath } from "@cosmjs/amino";
-import { toAscii } from "@cosmjs/encoding";
-import { DirectSecp256k1HdWallet } from "@cosmjs/proto-signing";
-import { Tendermint34Client } from "@cosmjs/tendermint-rpc";
-import { assert, sleep } from "@cosmjs/utils";
+import { coin, coins, makeCosmoshubPath } from "@bogard/amino";
+import { toAscii } from "@bogard/encoding";
+import { DirectSecp256k1HdWallet } from "@bogard/proto-signing";
+import { Tendermint34Client } from "@bogard/tendermint-rpc";
+import { assert, sleep } from "@bogard/utils";
 import {
   ProposalStatus,
   TextProposal,

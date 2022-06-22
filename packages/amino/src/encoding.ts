@@ -1,6 +1,6 @@
-import { fromBase64, fromBech32, fromHex, toBase64, toBech32, toHex } from "@cosmjs/encoding";
-import { Uint53 } from "@cosmjs/math";
-import { arrayContentStartsWith } from "@cosmjs/utils";
+import { fromBase64, fromBech32, fromHex, toBase64, toBech32, toHex } from "@bogard/encoding";
+import { Uint53 } from "@bogard/math";
+import { arrayContentStartsWith } from "@bogard/utils";
 
 import {
   isEd25519Pubkey,
@@ -9,15 +9,16 @@ import {
   MultisigThresholdPubkey,
   Pubkey,
   pubkeyType,
-  Secp256k1Pubkey,
+  SinglePubkey,
 } from "./pubkeys";
 
-export function encodeSecp256k1Pubkey(pubkey: Uint8Array): Secp256k1Pubkey {
+export function encodeSecp256k1Pubkey(pubkey: Uint8Array, urlType?: string): SinglePubkey {
   if (pubkey.length !== 33 || (pubkey[0] !== 0x02 && pubkey[0] !== 0x03)) {
     throw new Error("Public key must be compressed secp256k1, i.e. 33 bytes starting with 0x02 or 0x03");
   }
+  const type = urlType ? urlType : pubkeyType.secp256k1;
   return {
-    type: pubkeyType.secp256k1,
+    type: type,
     value: toBase64(pubkey),
   };
 }

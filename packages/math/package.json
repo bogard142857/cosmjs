@@ -1,5 +1,5 @@
 {
-  "name": "@cosmjs/math",
+  "name": "@bogard/math",
   "version": "0.28.7",
   "description": "Math helpers for blockchain projects",
   "contributors": [

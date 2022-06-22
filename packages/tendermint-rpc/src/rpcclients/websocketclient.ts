@@ -5,9 +5,9 @@ import {
   JsonRpcResponse,
   JsonRpcSuccessResponse,
   parseJsonRpcResponse,
-} from "@cosmjs/json-rpc";
-import { ConnectionStatus, ReconnectingSocket, SocketWrapperMessageEvent } from "@cosmjs/socket";
-import { firstEvent } from "@cosmjs/stream";
+} from "@bogard/json-rpc";
+import { ConnectionStatus, ReconnectingSocket, SocketWrapperMessageEvent } from "@bogard/socket";
+import { firstEvent } from "@bogard/stream";
 import { Listener, Producer, Stream, Subscription } from "xstream";
 
 import { hasProtocol, RpcStreamingClient, SubscriptionEvent } from "./rpcclient";

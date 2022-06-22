@@ -1,6 +1,6 @@
-# @cosmjs/cli
+# @bogard/cli
 
-[![npm version](https://img.shields.io/npm/v/@cosmjs/cli.svg)](https://www.npmjs.com/package/@cosmjs/cli)
+[![npm version](https://img.shields.io/npm/v/@bogard/cli.svg)](https://www.npmjs.com/package/@bogard/cli)
 
 ## Installation and first run
 
@@ -11,34 +11,34 @@ installations to your demo project. If you don't have one yet, just
 ### locally with yarn
 
 ```
-$ yarn add @cosmjs/cli --dev
+$ yarn add @bogard/cli --dev
 $ ./node_modules/.bin/cosmjs-cli
 ```
 
 ### locally with npm
 
 ```
-$ npm install @cosmjs/cli --save-dev
+$ npm install @bogard/cli --save-dev
 $ ./node_modules/.bin/cosmjs-cli
 ```
 
 ### globally with yarn
 
 ```
-$ yarn global add @cosmjs/cli
+$ yarn global add @bogard/cli
 $ cosmjs-cli
 ```
 
 ### globally with npm
 
 ```
-$ npm install -g @cosmjs/cli
+$ npm install -g @bogard/cli
 $ cosmjs-cli
 ```
 
 ## Getting started
 
-1. Install `@cosmjs/cli` and run `cosmjs-cli` as shown above
+1. Install `@bogard/cli` and run `cosmjs-cli` as shown above
 2. Start a local wasmd blockchain
 3. Start with `./bin/cosmjs-cli --init examples/local_faucet.ts`
 4. Play around as in the following example code

@@ -1,4 +1,4 @@
-import { Tendermint34Client } from "@cosmjs/tendermint-rpc";
+import { Tendermint34Client } from "@bogard/tendermint-rpc";
 
 import { QueryClient } from "../../queryclient";
 import { pendingWithoutSimapp, simapp } from "../../testutils.spec";

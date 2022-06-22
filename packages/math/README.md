@@ -1,6 +1,6 @@
-# @cosmjs/math
+# @bogard/math
 
-[![npm version](https://img.shields.io/npm/v/@cosmjs/math.svg)](https://www.npmjs.com/package/@cosmjs/math)
+[![npm version](https://img.shields.io/npm/v/@bogard/math.svg)](https://www.npmjs.com/package/@bogard/math)
 
 ## License
 

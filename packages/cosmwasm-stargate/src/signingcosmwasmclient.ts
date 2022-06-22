@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { encodeSecp256k1Pubkey, makeSignDoc as makeSignDocAmino } from "@cosmjs/amino";
-import { sha256 } from "@cosmjs/crypto";
-import { fromBase64, toHex, toUtf8 } from "@cosmjs/encoding";
-import { Int53, Uint53 } from "@cosmjs/math";
+import { encodeSecp256k1Pubkey, makeSignDoc as makeSignDocAmino } from "@bogard/amino";
+import { sha256 } from "@bogard/crypto";
+import { fromBase64, toHex, toUtf8 } from "@bogard/encoding";
+import { Int53, Uint53 } from "@bogard/math";
 import {
   EncodeObject,
   encodePubkey,
@@ -12,7 +12,7 @@ import {
   OfflineSigner,
   Registry,
   TxBodyEncodeObject,
-} from "@cosmjs/proto-signing";
+} from "@bogard/proto-signing";
 import {
   AminoTypes,
   calculateFee,
@@ -29,9 +29,9 @@ import {
   MsgWithdrawDelegatorRewardEncodeObject,
   SignerData,
   StdFee,
-} from "@cosmjs/stargate";
-import { HttpEndpoint, Tendermint34Client } from "@cosmjs/tendermint-rpc";
-import { assert, assertDefined } from "@cosmjs/utils";
+} from "@bogard/stargate";
+import { HttpEndpoint, Tendermint34Client } from "@bogard/tendermint-rpc";
+import { assert, assertDefined } from "@bogard/utils";
 import { MsgWithdrawDelegatorReward } from "cosmjs-types/cosmos/distribution/v1beta1/tx";
 import { MsgDelegate, MsgUndelegate } from "cosmjs-types/cosmos/staking/v1beta1/tx";
 import { SignMode } from "cosmjs-types/cosmos/tx/signing/v1beta1/signing";
@@ -226,7 +226,10 @@ export class SigningCosmWasmClient extends CosmWasmClient {
     if (!accountFromSigner) {
       throw new Error("Failed to retrieve account from signer");
     }
-    const pubkey = encodeSecp256k1Pubkey(accountFromSigner.pubkey);
+    const pubkey = encodeSecp256k1Pubkey(
+      accountFromSigner.pubkey,
+      accountFromSigner.algo === "ethsecp256k1" ? "/ethermint.crypto.v1.ethsecp256k1.PubKey" : "",
+    );
     const { sequence } = await this.getSequence(signerAddress);
     const { gasInfo } = await this.forceGetQueryClient().tx.simulate(anyMsgs, memo, pubkey, sequence);
     assertDefined(gasInfo);
@@ -544,7 +547,12 @@ export class SigningCosmWasmClient extends CosmWasmClient {
     if (!accountFromSigner) {
       throw new Error("Failed to retrieve account from signer");
     }
-    const pubkey = encodePubkey(encodeSecp256k1Pubkey(accountFromSigner.pubkey));
+    const pubkey = encodePubkey(
+      encodeSecp256k1Pubkey(
+        accountFromSigner.pubkey,
+        accountFromSigner.algo === "ethsecp256k1" ? "/ethermint.crypto.v1.ethsecp256k1.PubKey" : "",
+      ),
+    );
     const signMode = SignMode.SIGN_MODE_LEGACY_AMINO_JSON;
     const msgs = messages.map((msg) => this.aminoTypes.toAmino(msg));
     const signDoc = makeSignDocAmino(msgs, fee, chainId, memo, accountNumber, sequence);
@@ -586,7 +594,12 @@ export class SigningCosmWasmClient extends CosmWasmClient {
     if (!accountFromSigner) {
       throw new Error("Failed to retrieve account from signer");
     }
-    const pubkey = encodePubkey(encodeSecp256k1Pubkey(accountFromSigner.pubkey));
+    const pubkey = encodePubkey(
+      encodeSecp256k1Pubkey(
+        accountFromSigner.pubkey,
+        accountFromSigner.algo === "ethsecp256k1" ? "/ethermint.crypto.v1.ethsecp256k1.PubKey" : "",
+      ),
+    );
     const txBody: TxBodyEncodeObject = {
       typeUrl: "/cosmos.tx.v1beta1.TxBody",
       value: {

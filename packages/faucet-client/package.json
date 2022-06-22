@@ -1,5 +1,5 @@
 {
-  "name": "@cosmjs/faucet-client",
+  "name": "@bogard/faucet-client",
   "version": "0.28.7",
   "description": "The faucet client",
   "contributors": [

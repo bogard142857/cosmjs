@@ -1,5 +1,5 @@
-import { coin, coins } from "@cosmjs/amino";
-import { DirectSecp256k1HdWallet } from "@cosmjs/proto-signing";
+import { coin, coins } from "@bogard/amino";
+import { DirectSecp256k1HdWallet } from "@bogard/proto-signing";
 import { MsgCreateVestingAccount } from "cosmjs-types/cosmos/vesting/v1beta1/tx";
 import Long from "long";
 

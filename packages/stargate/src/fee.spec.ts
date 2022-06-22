@@ -1,4 +1,4 @@
-import { Decimal } from "@cosmjs/math";
+import { Decimal } from "@bogard/math";
 
 import { calculateFee, GasPrice } from "./fee";
 
