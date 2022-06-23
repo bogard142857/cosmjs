@@ -1,4 +1,4 @@
-import { MultisigThresholdPubkey, pubkeyToAddress } from "@bogard/amino";
+import { MultisigThresholdPubkey, pubkeyToAddress } from "@honsop/amino";
 
 // https://github.com/cosmos/cosmjs/issues/673#issuecomment-779847238
 const multisigPubkey: MultisigThresholdPubkey = {

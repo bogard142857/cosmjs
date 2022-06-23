@@ -1,4 +1,4 @@
-import { Decimal, Uint53, Uint64 } from "@bogard/math";
+import { Decimal, Uint53, Uint64 } from "@honsop/math";
 export interface Coin {
   readonly denom: string;
   readonly amount: string;
@@ -48,9 +48,9 @@ export function coins(amount: number | string, denom: string): Coin[] {
  * A Stargate-ready variant of this function is available via:
  *
  * ```
- * import { parseCoins } from "@bogard/proto-signing";
+ * import { parseCoins } from "@honsop/proto-signing";
  * // or
- * import { parseCoins } from "@bogard/stargate";
+ * import { parseCoins } from "@honsop/stargate";
  * ```
  */
 export function parseCoins(input: string): Coin[] {

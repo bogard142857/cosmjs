@@ -10,9 +10,9 @@ import {
   Slip10,
   Slip10Curve,
   stringToPath,
-} from "@bogard/crypto";
-import { fromBase64, fromUtf8, toBase64, toBech32, toUtf8 } from "@bogard/encoding";
-import { assert, isNonNullObject } from "@bogard/utils";
+} from "@honsop/crypto";
+import { fromBase64, fromUtf8, toBase64, toBech32, toUtf8 } from "@honsop/encoding";
+import { assert, isNonNullObject } from "@honsop/utils";
 
 import { rawSecp256k1PubkeyToRawAddress } from "./addresses";
 import { makeCosmoshubPath } from "./paths";
@@ -119,6 +119,7 @@ export interface Secp256k1HdWalletOptions {
   readonly hdPaths: readonly HdPath[];
   /** The bech32 address prefix (human readable part). Defaults to "cosmos". */
   readonly prefix: string;
+  readonly coinType?: number;
 }
 
 interface Secp256k1HdWalletConstructorOptions extends Partial<Secp256k1HdWalletOptions> {
@@ -246,7 +247,8 @@ export class Secp256k1HdWallet implements OfflineAminoSigner {
   private readonly accounts: readonly DerivationInfo[];
 
   protected constructor(mnemonic: EnglishMnemonic, options: Secp256k1HdWalletConstructorOptions) {
-    const hdPaths = options.hdPaths ?? defaultOptions.hdPaths;
+    const hdPaths =
+      options.hdPaths ?? options.coinType ? [makeCosmoshubPath(0, options.coinType)] : defaultOptions.hdPaths;
     const prefix = options.prefix ?? defaultOptions.prefix;
     this.secret = mnemonic;
     this.seed = options.seed;

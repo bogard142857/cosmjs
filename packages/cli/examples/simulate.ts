@@ -1,12 +1,12 @@
-import { coins, makeCosmoshubPath } from "@bogard/amino";
-import { DirectSecp256k1HdWallet } from "@bogard/proto-signing";
+import { coins, makeCosmoshubPath } from "@honsop/amino";
+import { DirectSecp256k1HdWallet } from "@honsop/proto-signing";
 import {
   assertIsDeliverTxSuccess,
   calculateFee,
   GasPrice,
   MsgSendEncodeObject,
   SigningStargateClient,
-} from "@bogard/stargate";
+} from "@honsop/stargate";
 
 // Wallet
 const mnemonic =

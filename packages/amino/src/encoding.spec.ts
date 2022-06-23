@@ -1,4 +1,4 @@
-import { fromBase64, fromBech32, fromHex } from "@bogard/encoding";
+import { fromBase64, fromBech32, fromHex } from "@honsop/encoding";
 
 import {
   decodeAminoPubkey,

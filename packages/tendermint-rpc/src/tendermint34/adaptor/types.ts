@@ -1,4 +1,4 @@
-import { JsonRpcRequest, JsonRpcSuccessResponse } from "@bogard/json-rpc";
+import { JsonRpcRequest, JsonRpcSuccessResponse } from "@honsop/json-rpc";
 
 import { SubscriptionEvent } from "../../rpcclients";
 import * as requests from "../requests";

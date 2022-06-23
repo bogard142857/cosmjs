@@ -1,4 +1,4 @@
-import { StargateClient } from "@bogard/stargate";
+import { StargateClient } from "@honsop/stargate";
 
 import { Webserver } from "../api/webserver";
 import * as constants from "../constants";

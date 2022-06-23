@@ -1,7 +1,7 @@
 #!/usr/bin/env -S yarn node
 
 /* eslint-disable @typescript-eslint/naming-convention */
-const { encodeSecp256k1Pubkey, makeCosmoshubPath, Secp256k1HdWallet } = require("@bogard/amino");
+const { encodeSecp256k1Pubkey, makeCosmoshubPath, Secp256k1HdWallet } = require("@honsop/amino");
 
 const prefix = "wasm";
 const accountsToCreate = [

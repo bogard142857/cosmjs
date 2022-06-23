@@ -1,4 +1,4 @@
-import { toListPromise } from "@bogard/stream";
+import { toListPromise } from "@honsop/stream";
 
 import { StreamingSocket } from "./streamingsocket";
 

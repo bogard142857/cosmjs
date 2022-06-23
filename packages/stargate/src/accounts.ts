@@ -1,7 +1,7 @@
-import { Pubkey } from "@bogard/amino";
-import { Uint64 } from "@bogard/math";
-import { decodePubkey } from "@bogard/proto-signing";
-import { assert } from "@bogard/utils";
+import { Pubkey } from "@honsop/amino";
+import { Uint64 } from "@honsop/math";
+import { decodePubkey } from "@honsop/proto-signing";
+import { assert } from "@honsop/utils";
 import { BaseAccount, ModuleAccount } from "cosmjs-types/cosmos/auth/v1beta1/auth";
 import {
   BaseVestingAccount,
@@ -59,7 +59,7 @@ export function accountFromAny(input: Any): Account {
       assert(baseAccount);
       return accountFromBaseAccount(baseAccount);
     }
-    case "/ethermint.types.v1.EthAccount":            
+    case "/ethermint.types.v1.EthAccount":
       const baseAccount = ModuleAccount.decode(value).baseAccount;
       assert(baseAccount);
       return accountFromBaseAccount(baseAccount);

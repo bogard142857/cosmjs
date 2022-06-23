@@ -1,6 +1,6 @@
-# @bogard/tendermint-rpc
+# @honsop/tendermint-rpc
 
-[![npm version](https://img.shields.io/npm/v/@bogard/tendermint-rpc.svg)](https://www.npmjs.com/package/@bogard/tendermint-rpc)
+[![npm version](https://img.shields.io/npm/v/@honsop/tendermint-rpc.svg)](https://www.npmjs.com/package/@honsop/tendermint-rpc)
 
 This package provides a type-safe wrapper around
 [Tendermint RPC](https://docs.tendermint.com/master/rpc/). Notably, all binary

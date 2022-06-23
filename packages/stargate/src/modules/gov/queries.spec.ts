@@ -1,8 +1,8 @@
-import { coin, coins, makeCosmoshubPath } from "@bogard/amino";
-import { toAscii } from "@bogard/encoding";
-import { DirectSecp256k1HdWallet } from "@bogard/proto-signing";
-import { Tendermint34Client } from "@bogard/tendermint-rpc";
-import { assert, sleep } from "@bogard/utils";
+import { coin, coins, makeCosmoshubPath } from "@honsop/amino";
+import { toAscii } from "@honsop/encoding";
+import { DirectSecp256k1HdWallet } from "@honsop/proto-signing";
+import { Tendermint34Client } from "@honsop/tendermint-rpc";
+import { assert, sleep } from "@honsop/utils";
 import {
   ProposalStatus,
   TextProposal,

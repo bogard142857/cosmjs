@@ -1,8 +1,8 @@
-import { AccountData, makeCosmoshubPath, StdSignDoc } from "@bogard/amino";
-import { pathToString, stringToPath } from "@bogard/crypto";
-import { toBase64 } from "@bogard/encoding";
-import { Uint53 } from "@bogard/math";
-import { assert } from "@bogard/utils";
+import { AccountData, makeCosmoshubPath, StdSignDoc } from "@honsop/amino";
+import { pathToString, stringToPath } from "@honsop/crypto";
+import { toBase64 } from "@honsop/encoding";
+import { Uint53 } from "@honsop/math";
+import { assert } from "@honsop/utils";
 import TransportWebUSB from "@ledgerhq/hw-transport-webusb";
 
 import { LedgerSigner } from "../ledgersigner";

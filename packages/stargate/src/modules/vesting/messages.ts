@@ -1,4 +1,4 @@
-import { GeneratedType } from "@bogard/proto-signing";
+import { GeneratedType } from "@honsop/proto-signing";
 import { MsgCreateVestingAccount } from "cosmjs-types/cosmos/vesting/v1beta1/tx";
 
 export const vestingTypes: ReadonlyArray<[string, GeneratedType]> = [

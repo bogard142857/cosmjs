@@ -1,8 +1,8 @@
-const { makeCosmoshubPath, makeSignDoc } = require("@bogard/amino");
-const { pathToString } = require("@bogard/crypto");
-const { toBase64 } = require("@bogard/encoding");
+const { makeCosmoshubPath, makeSignDoc } = require("@honsop/amino");
+const { pathToString } = require("@honsop/crypto");
+const { toBase64 } = require("@honsop/encoding");
 // eslint-disable-next-line @typescript-eslint/naming-convention
-const { LedgerSigner } = require("@bogard/ledger-amino");
+const { LedgerSigner } = require("@honsop/ledger-amino");
 // eslint-disable-next-line @typescript-eslint/naming-convention
 const TransportNodeHid = require("@ledgerhq/hw-transport-node-hid").default;
 

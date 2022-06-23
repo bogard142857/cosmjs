@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { toAscii } from "@bogard/encoding";
-import { Uint64 } from "@bogard/math";
+import { toAscii } from "@honsop/encoding";
+import { Uint64 } from "@honsop/math";
 import { Any } from "cosmjs-types/google/protobuf/any";
 import {
   QueryClientImpl as TransferQuery,

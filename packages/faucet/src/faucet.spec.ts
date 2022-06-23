@@ -1,7 +1,7 @@
-import { Random } from "@bogard/crypto";
-import { toBech32 } from "@bogard/encoding";
-import { makeCosmoshubPath, StargateClient } from "@bogard/stargate";
-import { assert } from "@bogard/utils";
+import { Random } from "@honsop/crypto";
+import { toBech32 } from "@honsop/encoding";
+import { makeCosmoshubPath, StargateClient } from "@honsop/stargate";
+import { assert } from "@honsop/utils";
 
 import { Faucet } from "./faucet";
 import { TokenConfiguration } from "./tokenmanager";

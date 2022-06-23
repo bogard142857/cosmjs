@@ -1,4 +1,4 @@
-import { Decimal } from "@bogard/math";
+import { Decimal } from "@honsop/math";
 
 import { calculateFee, GasPrice } from "./fee";
 

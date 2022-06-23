@@ -101,13 +101,13 @@ order to avoid conflicts. Here is an overview of the ports used:
 
 | Port  | Application           | Usage                           |
 | ----- | --------------------- | ------------------------------- |
-| 1317  | wasmd LCD API         | @bogard/launchpad tests         |
+| 1317  | wasmd LCD API         | @honsop/launchpad tests         |
 | 1318  | simapp LCD API        | Manual Stargate debugging       |
 | 1319  | wasmd LCD API         | Manual Stargate debugging       |
-| 4444  | socketserver          | @bogard/sockets tests           |
-| 4445  | socketserver slow     | @bogard/sockets tests           |
-| 5555  | httpserver            | @bogard/tendermint-rpc tests    |
+| 4444  | socketserver          | @honsop/sockets tests           |
+| 4445  | socketserver slow     | @honsop/sockets tests           |
+| 5555  | httpserver            | @honsop/tendermint-rpc tests    |
 | 9090  | simapp gRPC           | Manual Stargate debugging       |
-| 11134 | Tendermint 0.34 RPC   | @bogard/tendermint-rpc tests    |
+| 11134 | Tendermint 0.34 RPC   | @honsop/tendermint-rpc tests    |
 | 26658 | simapp Tendermint RPC | Stargate client tests           |
-| 26659 | wasmd Tendermint RPC  | @bogard/cosmwasm-stargate tests |
+| 26659 | wasmd Tendermint RPC  | @honsop/cosmwasm-stargate tests |

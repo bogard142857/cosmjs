@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { addCoins } from "@bogard/amino";
-import { toHex } from "@bogard/encoding";
-import { Uint53 } from "@bogard/math";
-import { HttpEndpoint, Tendermint34Client, toRfc3339WithNanoseconds } from "@bogard/tendermint-rpc";
-import { assert, sleep } from "@bogard/utils";
+import { addCoins } from "@honsop/amino";
+import { toHex } from "@honsop/encoding";
+import { Uint53 } from "@honsop/math";
+import { HttpEndpoint, Tendermint34Client, toRfc3339WithNanoseconds } from "@honsop/tendermint-rpc";
+import { assert, sleep } from "@honsop/utils";
 import { MsgData } from "cosmjs-types/cosmos/base/abci/v1beta1/abci";
 import { Coin } from "cosmjs-types/cosmos/base/v1beta1/coin";
 import { QueryDelegatorDelegationsResponse } from "cosmjs-types/cosmos/staking/v1beta1/query";
@@ -71,13 +71,13 @@ export interface IndexedTx {
    * If you hash this, you get the transaction hash (= transaction ID):
    *
    * ```js
-   * import { sha256 } from "@bogard/crypto";
-   * import { toHex } from "@bogard/encoding";
+   * import { sha256 } from "@honsop/crypto";
+   * import { toHex } from "@honsop/encoding";
    *
    * const transactionId = toHex(sha256(indexTx.tx)).toUpperCase();
    * ```
    *
-   * Use `decodeTxRaw` from @bogard/proto-signing to decode this.
+   * Use `decodeTxRaw` from @honsop/proto-signing to decode this.
    */
   readonly tx: Uint8Array;
   readonly gasUsed: number;

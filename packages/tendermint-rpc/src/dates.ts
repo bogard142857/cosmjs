@@ -1,5 +1,5 @@
-import { fromRfc3339 } from "@bogard/encoding";
-import { Uint32 } from "@bogard/math";
+import { fromRfc3339 } from "@honsop/encoding";
+import { Uint32 } from "@honsop/math";
 import { ReadonlyDate } from "readonly-date";
 
 export interface ReadonlyDateWithNanoseconds extends ReadonlyDate {

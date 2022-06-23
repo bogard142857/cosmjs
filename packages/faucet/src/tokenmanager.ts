@@ -1,5 +1,5 @@
-import { Decimal, Uint53 } from "@bogard/math";
-import { Coin } from "@bogard/stargate";
+import { Decimal, Uint53 } from "@honsop/math";
+import { Coin } from "@honsop/stargate";
 
 import { MinimalAccount } from "./types";
 

@@ -1,6 +1,6 @@
-# @bogard/faucet
+# @honsop/faucet
 
-[![npm version](https://img.shields.io/npm/v/@bogard/faucet.svg)](https://www.npmjs.com/package/@bogard/faucet)
+[![npm version](https://img.shields.io/npm/v/@honsop/faucet.svg)](https://www.npmjs.com/package/@honsop/faucet)
 
 The faucet is built as part of the monorepo. In the repo root do:
 

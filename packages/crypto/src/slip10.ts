@@ -1,5 +1,5 @@
-import { fromHex, toAscii } from "@bogard/encoding";
-import { Uint32, Uint53 } from "@bogard/math";
+import { fromHex, toAscii } from "@honsop/encoding";
+import { Uint32, Uint53 } from "@honsop/math";
 import BN from "bn.js";
 import elliptic from "elliptic";
 
@@ -55,7 +55,7 @@ export class Slip10RawIndex extends Uint32 {
  * This can be constructed via string parsing:
  *
  * ```ts
- * import { stringToPath } from "@bogard/crypto";
+ * import { stringToPath } from "@honsop/crypto";
  *
  * const path = stringToPath("m/0'/1/2'/2/1000000000");
  * ```
@@ -63,7 +63,7 @@ export class Slip10RawIndex extends Uint32 {
  * or manually:
  *
  * ```ts
- * import { HdPath, Slip10RawIndex } from "@bogard/crypto";
+ * import { HdPath, Slip10RawIndex } from "@honsop/crypto";
  *
  * // m/0'/1/2'/2/1000000000
  * const path: HdPath = [

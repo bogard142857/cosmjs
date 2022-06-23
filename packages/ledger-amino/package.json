@@ -1,6 +1,6 @@
 {
-  "name": "@bogard/ledger-amino",
-  "version": "0.28.7",
+  "name": "@honsop/ledger-amino",
+  "version": "0.28.11",
   "description": "A library for signing Amino-encoded transactions using Ledger devices",
   "contributors": [
     "Will Clark <willclarktech@users.noreply.github.com>"
@@ -37,22 +37,22 @@
     "pack-web": "yarn build-or-skip && webpack --mode development --config webpack.demo.config.js"
   },
   "dependencies": {
-    "@bogard/amino": "workspace:packages/amino",
-    "@bogard/crypto": "workspace:packages/crypto",
-    "@bogard/encoding": "workspace:packages/encoding",
-    "@bogard/math": "workspace:packages/math",
-    "@bogard/utils": "workspace:packages/utils",
+    "@honsop/amino": "workspace:packages/amino",
+    "@honsop/crypto": "workspace:packages/crypto",
+    "@honsop/encoding": "workspace:packages/encoding",
+    "@honsop/math": "workspace:packages/math",
+    "@honsop/utils": "workspace:packages/utils",
     "ledger-cosmos-js": "^2.1.8",
     "semver": "^7.3.2"
   },
   "devDependencies": {
-    "@bogard/stargate": "workspace:packages/stargate",
+    "@honsop/stargate": "workspace:packages/stargate",
     "@istanbuljs/nyc-config-typescript": "^1.0.1",
     "@ledgerhq/hw-transport": "^5.25.0",
     "@ledgerhq/hw-transport-node-hid": "^5.25.0",
     "@ledgerhq/hw-transport-webusb": "^5.25.0",
     "@types/eslint-plugin-prettier": "^3",
-    "@types/jasmine": "^3.8",
+    "@types/jasmine": "^4",
     "@types/ledgerhq__hw-transport": "^4.21.3",
     "@types/ledgerhq__hw-transport-node-hid": "^4.22.2",
     "@types/ledgerhq__hw-transport-webusb": "^4.70.1",
@@ -67,7 +67,7 @@
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "esm": "^3.2.25",
     "glob": "^7.1.6",
-    "jasmine": "^3.99",
+    "jasmine": "^4",
     "jasmine-spec-reporter": "^6",
     "nyc": "^15.1.0",
     "prettier": "^2.4.1",

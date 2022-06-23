@@ -1,4 +1,4 @@
-import { Coin } from "@bogard/stargate";
+import { Coin } from "@honsop/stargate";
 
 import { MinimalAccount, SendJob } from "./types";
 

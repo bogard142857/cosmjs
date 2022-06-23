@@ -1,5 +1,5 @@
-import { toUtf8 } from "@bogard/encoding";
-import { Int53 } from "@bogard/math";
+import { toUtf8 } from "@honsop/encoding";
+import { Int53 } from "@honsop/math";
 
 import { ReadonlyDateWithNanoseconds } from "../dates";
 import { BlockId, Version } from "./responses";

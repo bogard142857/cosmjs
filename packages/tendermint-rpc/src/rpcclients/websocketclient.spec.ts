@@ -1,5 +1,5 @@
-import { Uint53 } from "@bogard/math";
-import { toListPromise } from "@bogard/stream";
+import { Uint53 } from "@honsop/math";
+import { toListPromise } from "@honsop/stream";
 import { Stream } from "xstream";
 
 import { createJsonRpcRequest } from "../jsonrpc";

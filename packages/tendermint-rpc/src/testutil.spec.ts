@@ -1,5 +1,5 @@
-import { toAscii } from "@bogard/encoding";
-import { sleep } from "@bogard/utils";
+import { toAscii } from "@honsop/encoding";
+import { sleep } from "@honsop/utils";
 
 export const anyMatcher = /^.*$/; // Any string, including empty. Does not do more than a type check.
 

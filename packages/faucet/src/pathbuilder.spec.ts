@@ -1,5 +1,5 @@
-import { Slip10RawIndex } from "@bogard/crypto";
-import { makeCosmoshubPath } from "@bogard/proto-signing";
+import { Slip10RawIndex } from "@honsop/crypto";
+import { makeCosmoshubPath } from "@honsop/proto-signing";
 
 import { makePathBuilder, PathBuilder } from "./pathbuilder";
 

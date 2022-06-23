@@ -1,6 +1,6 @@
-# @bogard/ledger-amino
+# @honsop/ledger-amino
 
-[![npm version](https://img.shields.io/npm/v/@bogard/ledger-amino.svg)](https://www.npmjs.com/package/@bogard/ledger-amino)
+[![npm version](https://img.shields.io/npm/v/@honsop/ledger-amino.svg)](https://www.npmjs.com/package/@honsop/ledger-amino)
 
 ## Supported platforms
 

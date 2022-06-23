@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { fromBase64 } from "@bogard/encoding";
+import { fromBase64 } from "@honsop/encoding";
 
 import { decodeSignature, encodeSecp256k1Signature, StdSignature } from "./signature";
 

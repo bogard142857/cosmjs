@@ -1,6 +1,6 @@
-# @bogard/math
+# @honsop/math
 
-[![npm version](https://img.shields.io/npm/v/@bogard/math.svg)](https://www.npmjs.com/package/@bogard/math)
+[![npm version](https://img.shields.io/npm/v/@honsop/math.svg)](https://www.npmjs.com/package/@honsop/math)
 
 ## License
 

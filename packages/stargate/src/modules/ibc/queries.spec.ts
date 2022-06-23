@@ -1,4 +1,4 @@
-import { Tendermint34Client } from "@bogard/tendermint-rpc";
+import { Tendermint34Client } from "@honsop/tendermint-rpc";
 import Long from "long";
 
 import { QueryClient } from "../../queryclient";

@@ -1,5 +1,5 @@
-import { toHex } from "@bogard/encoding";
-import { Uint53 } from "@bogard/math";
+import { toHex } from "@honsop/encoding";
+import { Uint53 } from "@honsop/math";
 
 import { pubkeyToRawAddress } from "./addresses";
 import { MultisigThresholdPubkey, SinglePubkey } from "./pubkeys";

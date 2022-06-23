@@ -1,4 +1,4 @@
-import { Bip39, Random } from "@bogard/crypto";
+import { Bip39, Random } from "@honsop/crypto";
 
 import * as constants from "../constants";
 import { makePathBuilder } from "../pathbuilder";

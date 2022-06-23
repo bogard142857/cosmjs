@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { fromBase64, toUtf8 } from "@bogard/encoding";
-import { AminoTypes, coins } from "@bogard/stargate";
+import { fromBase64, toUtf8 } from "@honsop/encoding";
+import { AminoTypes, coins } from "@honsop/stargate";
 import {
   MsgClearAdmin,
   MsgExecuteContract,

@@ -1,6 +1,6 @@
-# @bogard/encoding
+# @honsop/encoding
 
-[![npm version](https://img.shields.io/npm/v/@bogard/encoding.svg)](https://www.npmjs.com/package/@bogard/encoding)
+[![npm version](https://img.shields.io/npm/v/@honsop/encoding.svg)](https://www.npmjs.com/package/@honsop/encoding)
 
 This package is an extension to the JavaScript standard library that is not
 bound to blockchain products. It provides basic hex/base64/ascii encoding to

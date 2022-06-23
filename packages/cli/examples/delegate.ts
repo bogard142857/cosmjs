@@ -1,4 +1,4 @@
-import { DirectSecp256k1HdWallet } from "@bogard/proto-signing";
+import { DirectSecp256k1HdWallet } from "@honsop/proto-signing";
 import {
   coin,
   MsgDelegateEncodeObject,
@@ -6,7 +6,7 @@ import {
   calculateFee,
   assertIsDeliverTxSuccess,
   GasPrice,
-} from "@bogard/stargate";
+} from "@honsop/stargate";
 
 // Wallet
 const wallet = await DirectSecp256k1HdWallet.fromMnemonic(

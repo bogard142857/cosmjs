@@ -1,8 +1,8 @@
-# @bogard/stream
+# @honsop/stream
 
-[![npm version](https://img.shields.io/npm/v/@bogard/stream.svg)](https://www.npmjs.com/package/@bogard/stream)
+[![npm version](https://img.shields.io/npm/v/@honsop/stream.svg)](https://www.npmjs.com/package/@honsop/stream)
 
-@bogard/stream are some helper methods and classes to help with stream
+@honsop/stream are some helper methods and classes to help with stream
 processing.
 
 ## License

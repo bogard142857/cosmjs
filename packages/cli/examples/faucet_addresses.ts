@@ -1,5 +1,5 @@
-import { makeCosmoshubPath, Secp256k1HdWallet } from "@bogard/amino";
-import { toBase64 } from "@bogard/encoding";
+import { makeCosmoshubPath, Secp256k1HdWallet } from "@honsop/amino";
+import { toBase64 } from "@honsop/encoding";
 
 const mnemonic =
   "economy stock theory fatal elder harbor betray wasp final emotion task crumble siren bottom lizard educate guess current outdoor pair theory focus wife stone";

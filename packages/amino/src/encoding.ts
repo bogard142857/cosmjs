@@ -1,6 +1,6 @@
-import { fromBase64, fromBech32, fromHex, toBase64, toBech32, toHex } from "@bogard/encoding";
-import { Uint53 } from "@bogard/math";
-import { arrayContentStartsWith } from "@bogard/utils";
+import { fromBase64, fromBech32, fromHex, toBase64, toBech32, toHex } from "@honsop/encoding";
+import { Uint53 } from "@honsop/math";
+import { arrayContentStartsWith } from "@honsop/utils";
 
 import {
   isEd25519Pubkey,

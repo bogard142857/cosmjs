@@ -1,4 +1,4 @@
-// Types in this file are exported outside of the @bogard/tendermint-rpc package,
+// Types in this file are exported outside of the @honsop/tendermint-rpc package,
 // e.g. as part of a request or response
 
 import { ReadonlyDateWithNanoseconds } from "./dates";

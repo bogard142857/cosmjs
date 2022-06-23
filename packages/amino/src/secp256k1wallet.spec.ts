@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { Secp256k1, Secp256k1Signature, Sha256 } from "@bogard/crypto";
-import { fromBase64, fromHex } from "@bogard/encoding";
+import { Secp256k1, Secp256k1Signature, Sha256 } from "@honsop/crypto";
+import { fromBase64, fromHex } from "@honsop/encoding";
 
 import { Secp256k1Wallet } from "./secp256k1wallet";
 import { serializeSignDoc, StdSignDoc } from "./signdoc";

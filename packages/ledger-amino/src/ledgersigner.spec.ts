@@ -6,15 +6,15 @@ import {
   makeSignDoc,
   Secp256k1HdWallet,
   serializeSignDoc,
-} from "@bogard/amino";
-import { Secp256k1, Secp256k1Signature, sha256 } from "@bogard/crypto";
-import { fromBase64 } from "@bogard/encoding";
+} from "@honsop/amino";
+import { Secp256k1, Secp256k1Signature, sha256 } from "@honsop/crypto";
+import { fromBase64 } from "@honsop/encoding";
 import {
   assertIsDeliverTxSuccess as assertIsDeliverTxSuccessStargate,
   calculateFee,
   SigningStargateClient,
-} from "@bogard/stargate";
-import { sleep } from "@bogard/utils";
+} from "@honsop/stargate";
+import { sleep } from "@honsop/utils";
 import Transport from "@ledgerhq/hw-transport";
 
 import { LedgerSigner } from "./ledgersigner";

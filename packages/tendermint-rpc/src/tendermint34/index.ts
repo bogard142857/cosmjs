@@ -1,5 +1,5 @@
 // Note: all exports in this module are publicly available via
-// `import { tendermint34 } from "@bogard/tendermint-rpc"`
+// `import { tendermint34 } from "@honsop/tendermint-rpc"`
 
 export {
   AbciInfoRequest,

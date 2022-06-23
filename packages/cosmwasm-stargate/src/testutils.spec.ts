@@ -1,13 +1,13 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { AminoSignResponse, Secp256k1HdWallet, Secp256k1HdWalletOptions, StdSignDoc } from "@bogard/amino";
-import { Bip39, EnglishMnemonic, Random } from "@bogard/crypto";
-import { fromBase64, toBech32 } from "@bogard/encoding";
+import { AminoSignResponse, Secp256k1HdWallet, Secp256k1HdWalletOptions, StdSignDoc } from "@honsop/amino";
+import { Bip39, EnglishMnemonic, Random } from "@honsop/crypto";
+import { fromBase64, toBech32 } from "@honsop/encoding";
 import {
   DirectSecp256k1HdWallet,
   DirectSecp256k1HdWalletOptions,
   DirectSignResponse,
   makeAuthInfoBytes,
-} from "@bogard/proto-signing";
+} from "@honsop/proto-signing";
 import {
   AuthExtension,
   BankExtension,
@@ -17,8 +17,8 @@ import {
   QueryClient,
   setupAuthExtension,
   setupBankExtension,
-} from "@bogard/stargate";
-import { Tendermint34Client } from "@bogard/tendermint-rpc";
+} from "@honsop/stargate";
+import { Tendermint34Client } from "@honsop/tendermint-rpc";
 import { SignMode } from "cosmjs-types/cosmos/tx/signing/v1beta1/signing";
 import { AuthInfo, SignDoc, TxBody } from "cosmjs-types/cosmos/tx/v1beta1/tx";
 

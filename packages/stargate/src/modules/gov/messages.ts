@@ -1,4 +1,4 @@
-import { EncodeObject, GeneratedType } from "@bogard/proto-signing";
+import { EncodeObject, GeneratedType } from "@honsop/proto-signing";
 import { MsgDeposit, MsgSubmitProposal, MsgVote } from "cosmjs-types/cosmos/gov/v1beta1/tx";
 
 export const govTypes: ReadonlyArray<[string, GeneratedType]> = [

@@ -1,4 +1,4 @@
-import { isUint8Array } from "@bogard/utils";
+import { isUint8Array } from "@honsop/utils";
 
 import { Random } from "./random";
 

@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { coin, coins, DirectSecp256k1HdWallet } from "@bogard/proto-signing";
-import { Tendermint34Client } from "@bogard/tendermint-rpc";
-import { sleep } from "@bogard/utils";
+import { coin, coins, DirectSecp256k1HdWallet } from "@honsop/proto-signing";
+import { Tendermint34Client } from "@honsop/tendermint-rpc";
+import { sleep } from "@honsop/utils";
 import { MsgDelegate } from "cosmjs-types/cosmos/staking/v1beta1/tx";
 
 import { QueryClient } from "../../queryclient";

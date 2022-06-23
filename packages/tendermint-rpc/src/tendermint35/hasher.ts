@@ -1,4 +1,4 @@
-import { Sha256, sha256 } from "@bogard/crypto";
+import { Sha256, sha256 } from "@honsop/crypto";
 
 import { encodeBlockId, encodeBytes, encodeInt, encodeString, encodeTime, encodeVersion } from "./encodings";
 import { Header } from "./responses";

@@ -3,8 +3,8 @@ import {
   calculateFee,
   SigningStargateClient,
   StargateClient,
-} from "@bogard/stargate";
-import { sleep } from "@bogard/utils";
+} from "@honsop/stargate";
+import { sleep } from "@honsop/utils";
 
 import * as constants from "./constants";
 import { debugAccount, logAccountsState, logSendJob } from "./debugging";

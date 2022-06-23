@@ -1,4 +1,4 @@
-import { Uint64 } from "@bogard/math";
+import { Uint64 } from "@honsop/math";
 import { ProposalStatus } from "cosmjs-types/cosmos/gov/v1beta1/gov";
 import {
   QueryClientImpl,

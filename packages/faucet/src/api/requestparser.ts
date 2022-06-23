@@ -1,4 +1,4 @@
-import { isNonNullObject } from "@bogard/utils";
+import { isNonNullObject } from "@honsop/utils";
 
 import { HttpError } from "./httperror";
 

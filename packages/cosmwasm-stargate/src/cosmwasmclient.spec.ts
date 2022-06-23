@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { sha256 } from "@bogard/crypto";
-import { fromAscii, fromBase64, fromHex, toAscii } from "@bogard/encoding";
-import { Int53 } from "@bogard/math";
+import { sha256 } from "@honsop/crypto";
+import { fromAscii, fromBase64, fromHex, toAscii } from "@honsop/encoding";
+import { Int53 } from "@honsop/math";
 import {
   DirectSecp256k1HdWallet,
   encodePubkey,
@@ -9,9 +9,9 @@ import {
   makeSignDoc,
   Registry,
   TxBodyEncodeObject,
-} from "@bogard/proto-signing";
-import { assertIsDeliverTxSuccess, coins, logs, MsgSendEncodeObject, StdFee } from "@bogard/stargate";
-import { assert, sleep } from "@bogard/utils";
+} from "@honsop/proto-signing";
+import { assertIsDeliverTxSuccess, coins, logs, MsgSendEncodeObject, StdFee } from "@honsop/stargate";
+import { assert, sleep } from "@honsop/utils";
 import { TxRaw } from "cosmjs-types/cosmos/tx/v1beta1/tx";
 import { ReadonlyDate } from "readonly-date";
 

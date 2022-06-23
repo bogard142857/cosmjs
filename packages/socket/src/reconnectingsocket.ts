@@ -1,4 +1,4 @@
-import { ValueAndUpdates } from "@bogard/stream";
+import { ValueAndUpdates } from "@honsop/stream";
 import { Listener, Producer, Stream } from "xstream";
 
 import { ConnectionStatus, QueueingStreamingSocket } from "./queueingstreamingsocket";

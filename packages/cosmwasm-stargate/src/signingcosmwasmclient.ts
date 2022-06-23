@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { encodeSecp256k1Pubkey, makeSignDoc as makeSignDocAmino } from "@bogard/amino";
-import { sha256 } from "@bogard/crypto";
-import { fromBase64, toHex, toUtf8 } from "@bogard/encoding";
-import { Int53, Uint53 } from "@bogard/math";
+import { encodeSecp256k1Pubkey, makeSignDoc as makeSignDocAmino } from "@honsop/amino";
+import { sha256 } from "@honsop/crypto";
+import { fromBase64, toHex, toUtf8 } from "@honsop/encoding";
+import { Int53, Uint53 } from "@honsop/math";
 import {
   EncodeObject,
   encodePubkey,
@@ -12,7 +12,7 @@ import {
   OfflineSigner,
   Registry,
   TxBodyEncodeObject,
-} from "@bogard/proto-signing";
+} from "@honsop/proto-signing";
 import {
   AminoTypes,
   calculateFee,
@@ -29,9 +29,9 @@ import {
   MsgWithdrawDelegatorRewardEncodeObject,
   SignerData,
   StdFee,
-} from "@bogard/stargate";
-import { HttpEndpoint, Tendermint34Client } from "@bogard/tendermint-rpc";
-import { assert, assertDefined } from "@bogard/utils";
+} from "@honsop/stargate";
+import { HttpEndpoint, Tendermint34Client } from "@honsop/tendermint-rpc";
+import { assert, assertDefined } from "@honsop/utils";
 import { MsgWithdrawDelegatorReward } from "cosmjs-types/cosmos/distribution/v1beta1/tx";
 import { MsgDelegate, MsgUndelegate } from "cosmjs-types/cosmos/staking/v1beta1/tx";
 import { SignMode } from "cosmjs-types/cosmos/tx/signing/v1beta1/signing";
@@ -611,7 +611,11 @@ export class SigningCosmWasmClient extends CosmWasmClient {
     const gasLimit = Int53.fromString(fee.gas).toNumber();
     const authInfoBytes = makeAuthInfoBytes([{ pubkey, sequence }], fee.amount, gasLimit);
     const signDoc = makeSignDoc(txBodyBytes, authInfoBytes, chainId, accountNumber);
-    const { signature, signed } = await this.signer.signDirect(signerAddress, signDoc);
+    const { signature, signed } = await this.signer.signDirect(
+      signerAddress,
+      signDoc,
+      accountFromSigner.algo === "ethsecp256k1" ? "/ethermint.crypto.v1.ethsecp256k1.PubKey" : "",
+    );
     return TxRaw.fromPartial({
       bodyBytes: signed.bodyBytes,
       authInfoBytes: signed.authInfoBytes,

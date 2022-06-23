@@ -1,4 +1,4 @@
-import { fromBase64 } from "@bogard/encoding";
+import { fromBase64 } from "@honsop/encoding";
 import {
   Channel,
   Counterparty as ChannelCounterparty,

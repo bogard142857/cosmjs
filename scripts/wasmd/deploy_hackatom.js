@@ -1,9 +1,9 @@
 #!/usr/bin/env -S yarn node
 
 /* eslint-disable @typescript-eslint/naming-convention */
-const { SigningCosmWasmClient } = require("@bogard/cosmwasm-stargate");
-const { DirectSecp256k1HdWallet } = require("@bogard/proto-signing");
-const { calculateFee, GasPrice } = require("@bogard/stargate");
+const { SigningCosmWasmClient } = require("@honsop/cosmwasm-stargate");
+const { DirectSecp256k1HdWallet } = require("@honsop/proto-signing");
+const { calculateFee, GasPrice } = require("@honsop/stargate");
 const fs = require("fs");
 
 const endpoint = "http://localhost:26659";
@@ -50,12 +50,7 @@ async function main() {
 
   const wasm = fs.readFileSync(__dirname + "/contracts/hackatom.wasm");
   const uploadFee = calculateFee(1_500_000, gasPrice);
-  const uploadReceipt = await client.upload(
-    alice.address0,
-    wasm,
-    uploadFee,
-    "Upload hackatom contract",
-  );
+  const uploadReceipt = await client.upload(alice.address0, wasm, uploadFee, "Upload hackatom contract");
   console.info(`Upload succeeded. Receipt: ${JSON.stringify(uploadReceipt)}`);
 
   const instantiateFee = calculateFee(500_000, gasPrice);

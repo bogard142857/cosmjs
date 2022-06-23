@@ -1,4 +1,4 @@
-import { fromBase64, fromUtf8, toBase64, toUtf8 } from "@bogard/encoding";
+import { fromBase64, fromUtf8, toBase64, toUtf8 } from "@honsop/encoding";
 
 /**
  * Takes a value, serializes it to JSON and encodes it as base64.

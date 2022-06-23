@@ -1,4 +1,4 @@
-import { fromHex, toHex } from "@bogard/encoding";
+import { fromHex, toHex } from "@honsop/encoding";
 
 import { Sha256, sha256 } from "./sha";
 import shaVectors from "./testdata/sha.json";

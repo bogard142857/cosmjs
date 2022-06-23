@@ -1,6 +1,6 @@
-# @bogard/faucet-client
+# @honsop/faucet-client
 
-[![npm version](https://img.shields.io/npm/v/@bogard/faucet-client.svg)](https://www.npmjs.com/package/@bogard/faucet-client)
+[![npm version](https://img.shields.io/npm/v/@honsop/faucet-client.svg)](https://www.npmjs.com/package/@honsop/faucet-client)
 
 ## Running the tests
 

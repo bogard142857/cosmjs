@@ -1,4 +1,4 @@
-import { GasPrice } from "@bogard/stargate";
+import { GasPrice } from "@honsop/stargate";
 
 import { TokenConfiguration } from "./tokenmanager";
 import { parseBankTokens } from "./tokens";

@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { isNonNullObject } from "@bogard/utils";
+import { isNonNullObject } from "@honsop/utils";
 
 export interface Attribute {
   readonly key: string;

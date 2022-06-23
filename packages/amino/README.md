@@ -1,8 +1,8 @@
-# @bogard/amino
+# @honsop/amino
 
-[![npm version](https://img.shields.io/npm/v/@bogard/amino.svg)](https://www.npmjs.com/package/@bogard/amino)
+[![npm version](https://img.shields.io/npm/v/@honsop/amino.svg)](https://www.npmjs.com/package/@honsop/amino)
 
-Helpers for Amino for @bogard/stargate.
+Helpers for Amino for @honsop/stargate.
 
 ## License
 

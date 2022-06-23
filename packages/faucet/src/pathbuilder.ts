@@ -1,4 +1,4 @@
-import { HdPath, stringToPath } from "@bogard/crypto";
+import { HdPath, stringToPath } from "@honsop/crypto";
 
 export type PathBuilder = (account_index: number) => HdPath;
 

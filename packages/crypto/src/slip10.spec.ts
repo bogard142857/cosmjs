@@ -1,4 +1,4 @@
-import { fromHex } from "@bogard/encoding";
+import { fromHex } from "@honsop/encoding";
 
 import {
   HdPath,

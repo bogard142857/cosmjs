@@ -1,7 +1,7 @@
-import { encodeSecp256k1Pubkey, makeCosmoshubPath, pubkeyToAddress, Secp256k1Pubkey } from "@bogard/amino";
-import { HdPath, Secp256k1Signature } from "@bogard/crypto";
-import { fromUtf8 } from "@bogard/encoding";
-import { assert } from "@bogard/utils";
+import { encodeSecp256k1Pubkey, makeCosmoshubPath, pubkeyToAddress, Secp256k1Pubkey } from "@honsop/amino";
+import { HdPath, Secp256k1Signature } from "@honsop/crypto";
+import { fromUtf8 } from "@honsop/encoding";
+import { assert } from "@honsop/utils";
 import Transport from "@ledgerhq/hw-transport";
 import CosmosApp, {
   AddressAndPublicKeyResponse,

@@ -1,9 +1,9 @@
-import { StdFee, SigningStargateClient } from "@bogard/stargate";
-import { DirectSecp256k1HdWallet } from "@bogard/proto-signing";
+import { StdFee, SigningStargateClient } from "@honsop/stargate";
+import { DirectSecp256k1HdWallet } from "@honsop/proto-signing";
 import { MsgSend } from "cosmjs-types/cosmos/bank/v1beta1/tx";
-import { coins } from "@bogard/amino";
-import { Bech32 } from "@bogard/encoding";
-import { Random } from "@bogard/crypto";
+import { coins } from "@honsop/amino";
+import { Bech32 } from "@honsop/encoding";
+import { Random } from "@honsop/crypto";
 
 const defaultHttpUrl = "http://localhost:26658";
 const defaultFee: StdFee = {

@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { fromBase64, fromHex } from "@bogard/encoding";
+import { fromBase64, fromHex } from "@honsop/encoding";
 
 import { decodeValidatorGenesis, decodeValidatorInfo, decodeValidatorUpdate } from "./responses";
 

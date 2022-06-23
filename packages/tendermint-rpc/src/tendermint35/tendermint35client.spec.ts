@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { toAscii } from "@bogard/encoding";
-import { firstEvent, toListPromise } from "@bogard/stream";
-import { sleep } from "@bogard/utils";
+import { toAscii } from "@honsop/encoding";
+import { firstEvent, toListPromise } from "@honsop/stream";
+import { sleep } from "@honsop/utils";
 import { ReadonlyDate } from "readonly-date";
 import { Stream } from "xstream";
 

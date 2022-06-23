@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { fromBase64, fromHex } from "@bogard/encoding";
-import { JsonRpcSuccessResponse } from "@bogard/json-rpc";
-import { assert } from "@bogard/utils";
+import { fromBase64, fromHex } from "@honsop/encoding";
+import { JsonRpcSuccessResponse } from "@honsop/json-rpc";
+import { assert } from "@honsop/utils";
 
 import { DateWithNanoseconds, fromRfc3339WithNanoseconds } from "../../dates";
 import { SubscriptionEvent } from "../../rpcclients";

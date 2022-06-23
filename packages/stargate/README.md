@@ -1,6 +1,6 @@
-# @bogard/stargate
+# @honsop/stargate
 
-[![npm version](https://img.shields.io/npm/v/@bogard/stargate.svg)](https://www.npmjs.com/package/@bogard/stargate)
+[![npm version](https://img.shields.io/npm/v/@honsop/stargate.svg)](https://www.npmjs.com/package/@honsop/stargate)
 
 A client library for the Cosmos SDK 0.40+.
 

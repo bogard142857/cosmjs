@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { Random } from "@bogard/crypto";
-import { toBech32 } from "@bogard/encoding";
+import { Random } from "@honsop/crypto";
+import { toBech32 } from "@honsop/encoding";
 
 import { AminoMsg, makeSignDoc, sortedJsonStringify } from "./signdoc";
 

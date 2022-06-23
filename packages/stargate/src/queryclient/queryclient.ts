@@ -1,9 +1,9 @@
 /* eslint-disable no-dupe-class-members, @typescript-eslint/ban-types, @typescript-eslint/naming-convention */
 import { iavlSpec, ics23, tendermintSpec, verifyExistence, verifyNonExistence } from "@confio/ics23";
-import { toAscii, toHex } from "@bogard/encoding";
-import { firstEvent } from "@bogard/stream";
-import { tendermint34, Tendermint34Client } from "@bogard/tendermint-rpc";
-import { arrayContentEquals, assert, assertDefined, isNonNullObject, sleep } from "@bogard/utils";
+import { toAscii, toHex } from "@honsop/encoding";
+import { firstEvent } from "@honsop/stream";
+import { tendermint34, Tendermint34Client } from "@honsop/tendermint-rpc";
+import { arrayContentEquals, assert, assertDefined, isNonNullObject, sleep } from "@honsop/utils";
 import { ProofOps } from "cosmjs-types/tendermint/crypto/proof";
 import { Stream } from "xstream";
 

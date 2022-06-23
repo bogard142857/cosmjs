@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { toUtf8 } from "@bogard/encoding";
-import { Uint53 } from "@bogard/math";
+import { toUtf8 } from "@honsop/encoding";
+import { Uint53 } from "@honsop/math";
 
 import { Coin } from "./coins";
 

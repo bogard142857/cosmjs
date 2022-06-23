@@ -1,6 +1,6 @@
-import { coins, makeCosmoshubPath } from "@bogard/amino";
-import { Secp256k1, Secp256k1Signature, sha256 } from "@bogard/crypto";
-import { fromBase64, fromHex } from "@bogard/encoding";
+import { coins, makeCosmoshubPath } from "@honsop/amino";
+import { Secp256k1, Secp256k1Signature, sha256 } from "@honsop/crypto";
+import { fromBase64, fromHex } from "@honsop/encoding";
 
 import { DirectSecp256k1HdWallet, extractKdfConfiguration } from "./directsecp256k1hdwallet";
 import { makeAuthInfoBytes, makeSignBytes, makeSignDoc } from "./signing";

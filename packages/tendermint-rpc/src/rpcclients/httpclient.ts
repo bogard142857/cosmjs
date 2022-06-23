@@ -3,7 +3,7 @@ import {
   JsonRpcRequest,
   JsonRpcSuccessResponse,
   parseJsonRpcResponse,
-} from "@bogard/json-rpc";
+} from "@honsop/json-rpc";
 import axios from "axios";
 
 import { hasProtocol, RpcClient } from "./rpcclient";

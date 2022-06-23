@@ -1,8 +1,8 @@
-# @bogard/socket
+# @honsop/socket
 
-[![npm version](https://img.shields.io/npm/v/@bogard/socket.svg)](https://www.npmjs.com/package/@bogard/socket)
+[![npm version](https://img.shields.io/npm/v/@honsop/socket.svg)](https://www.npmjs.com/package/@honsop/socket)
 
-@bogard/socket is a collection of helper methods and classes for working with
+@honsop/socket is a collection of helper methods and classes for working with
 WebSockets.
 
 ## License

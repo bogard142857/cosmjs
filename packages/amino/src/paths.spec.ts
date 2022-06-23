@@ -1,4 +1,4 @@
-import { Slip10RawIndex } from "@bogard/crypto";
+import { Slip10RawIndex } from "@honsop/crypto";
 
 import { makeCosmoshubPath } from "./paths";
 

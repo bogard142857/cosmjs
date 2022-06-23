@@ -1,4 +1,4 @@
-import { EncodeObject, GeneratedType } from "@bogard/proto-signing";
+import { EncodeObject, GeneratedType } from "@honsop/proto-signing";
 import {
   MsgClearAdmin,
   MsgExecuteContract,

@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { AminoMsg, Coin } from "@bogard/amino";
+import { AminoMsg, Coin } from "@honsop/amino";
 import {
   MsgFundCommunityPool,
   MsgSetWithdrawAddress,

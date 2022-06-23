@@ -1,4 +1,4 @@
-import { encodeSecp256k1Signature, makeCosmoshubPath, rawSecp256k1PubkeyToRawAddress } from "@bogard/amino";
+import { encodeSecp256k1Signature, makeCosmoshubPath, rawSecp256k1PubkeyToRawAddress } from "@honsop/amino";
 import {
   Bip39,
   EnglishMnemonic,
@@ -12,7 +12,7 @@ import {
   Slip10,
   Slip10Curve,
   stringToPath,
-} from "@bogard/crypto";
+} from "@honsop/crypto";
 import {
   Bech32,
   fromBase64,
@@ -23,8 +23,8 @@ import {
   toBech32,
   toHex,
   toUtf8,
-} from "@bogard/encoding";
-import { assert, isNonNullObject } from "@bogard/utils";
+} from "@honsop/encoding";
+import { assert, isNonNullObject } from "@honsop/utils";
 import { SignDoc } from "cosmjs-types/cosmos/tx/v1beta1/tx";
 
 import { AccountData, DirectSignResponse, OfflineDirectSigner } from "./signer";
@@ -128,6 +128,7 @@ export interface DirectSecp256k1HdWalletOptions {
   readonly hdPaths: readonly HdPath[];
   /** The bech32 address prefix (human readable part). Defaults to "cosmos". */
   readonly prefix: string;
+  readonly coinType?: number;
 }
 
 interface DirectSecp256k1HdWalletConstructorOptions extends Partial<DirectSecp256k1HdWalletOptions> {
@@ -256,7 +257,8 @@ export class DirectSecp256k1HdWallet implements OfflineDirectSigner {
 
   protected constructor(mnemonic: EnglishMnemonic, options: DirectSecp256k1HdWalletConstructorOptions) {
     const prefix = options.prefix ?? defaultOptions.prefix;
-    const hdPaths = options.hdPaths ?? defaultOptions.hdPaths;
+    const hdPaths =
+      options.hdPaths ?? options.coinType ? [makeCosmoshubPath(0, options.coinType)] : defaultOptions.hdPaths;
     this.secret = mnemonic;
     this.seed = options.seed;
     this.accounts = hdPaths.map((hdPath) => ({

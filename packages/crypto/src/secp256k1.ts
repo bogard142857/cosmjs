@@ -1,4 +1,4 @@
-import { fromHex, toHex } from "@bogard/encoding";
+import { fromHex, toHex } from "@honsop/encoding";
 import BN from "bn.js";
 import elliptic from "elliptic";
 

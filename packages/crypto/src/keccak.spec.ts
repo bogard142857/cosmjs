@@ -1,4 +1,4 @@
-import { fromHex, toHex } from "@bogard/encoding";
+import { fromHex, toHex } from "@honsop/encoding";
 
 import { Keccak256, keccak256 } from "./keccak";
 import keccakVectors from "./testdata/keccak.json";

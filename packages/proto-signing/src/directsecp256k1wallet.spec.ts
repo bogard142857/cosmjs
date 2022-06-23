@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { coins } from "@bogard/amino";
-import { Secp256k1, Secp256k1Signature, sha256 } from "@bogard/crypto";
-import { fromBase64, fromHex } from "@bogard/encoding";
+import { coins } from "@honsop/amino";
+import { Secp256k1, Secp256k1Signature, sha256 } from "@honsop/crypto";
+import { fromBase64, fromHex } from "@honsop/encoding";
 
 import { DirectSecp256k1Wallet } from "./directsecp256k1wallet";
 import { makeAuthInfoBytes, makeSignBytes, makeSignDoc } from "./signing";

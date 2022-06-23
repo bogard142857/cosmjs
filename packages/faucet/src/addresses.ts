@@ -1,4 +1,4 @@
-import { Bech32 } from "@bogard/encoding";
+import { Bech32 } from "@honsop/encoding";
 
 export function isValidAddress(input: string, requiredPrefix: string): boolean {
   try {
